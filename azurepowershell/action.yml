@@ -1,0 +1,11 @@
+name: 'Azure PowerShell'
+description: 'Use Azure PowerShell to Login to Azure (Login-AzAccount)'
+inputs: 
+  creds:
+    description: 'Create credentials using az cli command: `az ad sp create-for-rbac` and store it as secret variable: AZURE_CREDENTIALS'
+    required: true
+branding:
+  color: 'blue'
+runs:
+  using: 'pwsh'
+  main: 'login.ps1'
